@@ -1,0 +1,100 @@
+
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.banner-sub-header{
+    color: #ffd372;
+}
+
+.banner-sub-header:hover {
+    text-decoration: none;
+    color: #5ffe8e;
+}
+
+
+.fulltext p,
+.less {
+    display: none;
+}
+
+.fulltext:target p,
+.fulltext:target .less {
+    display: block;
+}
+
+.fulltext:target .more {
+    display: none;
+}
+
+/*===========================*/
+/* line 3, ../sass/style.scss */
+#outer-box {
+    width: 300px;
+    height: 194px;
+    display: block;
+    position: relative;
+}
+/* line 9, ../sass/style.scss */
+#outer-box img {
+    width: 300px;
+    height: auto;
+}
+/* line 14, ../sass/style.scss */
+#outer-box #inner-box {
+    background: rgba(0, 0, 0, 0.76);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+}
+/* line 25, ../sass/style.scss */
+#outer-box #inner-box p {
+    color: #fff;
+    line-height: 150px;
+    font-family: 'arial';
+    text-align: center;
+}
+/* line 34, ../sass/style.scss */
+#outer-box:hover #inner-box {
+    opacity: .9;
+    transition: opacity .5s;
+}
+/*
+.tester {
+    margin: 150vh 50px;
+    height: 100px;
+}
+.tester {
+    outline: dashed 4px salmon;
+    color: salmon;
+}
+.answer {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+}
+.tester, .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+*/

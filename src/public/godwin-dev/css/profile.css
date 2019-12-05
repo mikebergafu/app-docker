@@ -1,0 +1,54 @@
+body {
+    background: #bdc3c7;
+    font-size: 1.5em;
+}
+
+.wrap-sticky nav.navbar.bootsnav.sticked {
+    background-color: mintcream;
+}
+
+.inner-banner::before {
+    background: grey;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, grey, #203A43, grey);
+    background: -webkit-linear-gradient(to right, grey, #203A43, grey);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, grey, #203A43, grey);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: -1px 0 rgb(212, 230, 229), 0 1px floralwhite, 1px 0 floralwhite, 0 -1px floralwhite;
+}
+
+.basic-information {
+    border-radius: 10px;
+    background: whitesmoke
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    color: #000000;
+}
+
+.firstname {
+    color: azure;
+    text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 1px white;
+}
+
+.profile-button {
+    margin-top: 1em;
+    margin-left: 0em;
+    background: #0f2027;
+    border-radius: 5px;
+}
+
+.profile-button:hover {
+    background: #203A43;
+}
+
+.modal-header {
+    background: #203A43;
+}

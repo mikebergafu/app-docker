@@ -1,0 +1,142 @@
+
+
+@media (max-width: 300px) {
+    .berg-ul {
+        transform: scale(0.6);
+    }
+}
+
+@media (min-width: 301px) and (max-width: 350px) {
+    .berg-ul {
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+    .berg-ul {
+        transform: scale(0.8);
+    }
+}
+
+.berg-ul {
+    margin: 0;
+    padding: 0;
+    .berg-list-style: none;
+    display: flex;
+}
+
+.berg-ul .berg-li {
+    margin: 0 20px;
+}
+
+.berg-ul .berg-li a .fa {
+    font-size: 20px;
+    color: #555;
+    .berg-line-height: 40px;
+    transition: 0.5s;
+}
+
+.berg-ul .berg-li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    transform: perspective(500px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: 0.5s;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.berg-ul .berg-li a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.berg-ul .berg-li a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    height: 10px;
+    width: 100%;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.berg-ul .berg-li a:hover {
+    transform: perspective(500px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow: -25px 25px 25px rgba(0, 0, 0, 0.5);
+}
+
+.berg-ul .berg-li:hover .fa {
+    color: #fff;
+}
+
+.berg-ul .berg-li:hover:nth-child(1) a {
+    background-color: #3b5999;
+}
+
+.berg-ul .berg-li:hover:nth-child(1) a::before {
+    background-color: #2f477a;
+}
+
+.berg-ul .berg-li:hover:nth-child(1) a::after {
+    background-color: #4e69a3;
+}
+
+.berg-ul .berg-li:hover:nth-child(2) a {
+    background-color: #55acee;
+}
+
+.berg-ul .berg-li:hover:nth-child(2) a::before {
+    background-color: #4489be;
+}
+
+.berg-ul .berg-li:hover:nth-child(2) a::after {
+    background-color: #66b4ef;
+}
+
+.berg-ul .berg-li:hover:nth-child(3) a {
+    background-color: #dd4b39;
+}
+
+.berg-ul .berg-li:hover:nth-child(3) a::before {
+    background-color: #b03c2d;
+}
+
+.berg-ul .berg-li:hover:nth-child(3) a::after {
+    background-color: #e05d4c;
+}
+
+.berg-ul .berg-li:hover:nth-child(4) a {
+    background-color: #0077b5;
+}
+
+.berg-ul .berg-li:hover:nth-child(4) a::before {
+    background-color: #005f90;
+}
+
+.berg-ul .berg-li:hover:nth-child(4) a::after {
+    background-color: #1984bc;
+}
+
+.berg-ul .berg-li:hover:nth-child(5) a {
+    background-color: #e4405f;
+}
+
+.berg-ul .berg-li:hover:nth-child(5) a::before {
+    background-color: #b6334c;
+}
+
+.berg-ul .berg-li:hover:nth-child(5) a::after {
+    background-color: #e6536f;
+}

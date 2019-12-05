@@ -1,0 +1,54 @@
+
+.success-but {
+    background-color: powderblue;
+    transition: background-color .5s;
+}
+
+.success-but:hover{
+     background-color: gold;
+ }
+
+.un-link a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+select {
+    font-family: 'FontAwesome', 'sans-serif';
+}
+
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.but-verify {
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+
+.glyphicon-refresh-animate .but-verify {
+
+    -animation: spin .7s infinite linear !important;
+    -webkit-animation: spin2 .7s infinite linear !important;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

@@ -27,6 +27,8 @@
 # =========================================================
 
 ARG PHP_DOCKER_VERSION=""
+
+
 FROM php:${PHP_DOCKER_VERSION}-apache
 
 
@@ -45,6 +47,7 @@ RUN apt-get update && apt-get install -y \
     mlocate \
     iputils-ping \
     nano \
+    &&  docker-php-ext-install -j$(nproc) bcmath \
     &&  docker-php-ext-install -j$(nproc) mysqli \
     &&  docker-php-ext-install -j$(nproc) pdo pdo_mysql
 
@@ -63,6 +66,10 @@ RUN curl -sS "https://getcomposer.org/installer" | php && \
 ### copy and change modifications of entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+
+### copy apache2 configurations
+COPY default-vhost.conf /etc/apache2/sites-enabled/default-vhost.conf
 
 
 ### initialize mlocatedb
